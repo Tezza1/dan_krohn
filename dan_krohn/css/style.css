@@ -1,0 +1,65 @@
+/* -------------------------------------
+BODY
+---------------------------------------------*/
+body {
+  position: relative;
+  background-color: black; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: orange; }
+
+p {
+  color: white; }
+
+.btn {
+  background-color: orange;
+  color: black; }
+
+/* -------------------------------------
+JUMBOTRON 
+---------------------------------------------*/
+.jumbotron {
+  background-color: black; }
+
+.jumbotron h1 {
+  padding-top: 1em; }
+
+.jumbotron ul {
+  list-style-type: none; }
+
+.jumbotron li {
+  color: grey; }
+
+/* -------------------------------------
+CAROUSEL
+---------------------------------------------*/
+.carousel h3 {
+  color: white; }
+
+/* -------------------------------------
+MEDIA OBJECTS
+---------------------------------------------*/
+.media-items {
+  margin-top: 5em; }
+
+.card-items {
+  margin: 2em auto; }
+
+.divider {
+  padding: 0.3em;
+  border-right: 1px solid #ccc; }
+
+/* -------------------------------------
+CARDS
+---------------------------------------------*/
+.card {
+  margin-bottom: 6em;
+  background-color: #303030; }
+
+/* -------------------------------------
+MODALS
+---------------------------------------------*/
+.modal-content {
+  background-color: black; }
+
+/*# sourceMappingURL=style.css.map */

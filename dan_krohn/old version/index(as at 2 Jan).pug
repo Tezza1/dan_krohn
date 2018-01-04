@@ -1,0 +1,128 @@
+doctype html
+html(lang="en")
+    head
+        // Required meta tags
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        // Bootstrap CSS 
+        link(rel="stylesheet" href="css/bootstrap.min.css")
+        link(rel="stylesheet" href="css/style.css")
+    body
+        // NAVBAR 
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+            a(class="navbar-brand" href="#")
+                img(src="img/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="") 
+                | Bootstrap
+            button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+
+            div(class="collapse navbar-collapse" id="navbarsupportedcontent")
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a(class="nav-link" href="#") home 
+                            span.sr-only (current)
+                    li.nav-item
+                        a(class="nav-link" href="#") link
+                    li.nav-item
+                        a(class="nav-link disabled" href="#") disabled
+                form.form-inline.my-2.my-lg-0
+                    input(class="form-control mr-sm-2" type="text" placeholder="search" aria-label="search")
+                    button(class="btn btn-outline-success my-2 my-sm-0" type="submit") search
+
+        // JUMBOTRON 
+        .container-fluid
+            .jumbotron.jumbotron-fluid
+                .container
+                    h1.display-3 Fluid jumbotron
+                    p.lead This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                    hr.my-4
+                    p It uses utility classes for typography and spacing to space content out within the larger container.
+                    p.lead
+                        a(class="btn btn-primary btn-lg" href="#" role="button") Learn more
+
+        // CAROUSEL
+        .container-fluid
+            .row.justify-content-md-center
+                .col-md-10
+                    .carousel.slide#carouselExample(data-ride="carousel")
+                        ol.carousel-indicators
+                            li.active(data-target="#carouselExample" data-slide-to="0")
+                            li(data-target="#carouselExample" data-slide-to="1")
+                            li(data-target="#carouselExample" data-slide-to="2")
+                        .carousel-inner
+                            .carousel-item.active
+                                img.d-block.w-100(src="img/first-slide.svg" alt="First slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h3 Carousel sub-heading item
+                                    p Text
+                            .carousel-item
+                                img.d-block.w-100(src="img/second-slide.svg" alt="Second slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h3 Carousel sub-heading item
+                                    p Text
+                            .carousel-item
+                                img.d-block.w-100(src="img/third-slide.svg" alt="Third slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h3 Carousel sub-heading item
+                                    p Text
+                        a.carousel-control-prev(href="#carouselExample" role="button" data-slide="prev")
+                            span.carousel-control-prev-icon(aria-hidden="true")
+                            span.sr-only Previous
+                        a.carousel-control-next(href="#carouselExample" role="button" data-slide="next")
+                            span.carousel-control-next-icon(aria-hidden="true")
+                            span.sr-only Next
+
+        // CARDS
+        .container-fluid
+            .row.media-items
+                .col-sm-4
+                    .divider
+                        .media
+                            img.d-flex.mr-3(src="img/media-object.svg" alt="Generic placeholder image")
+                            .media-body
+                                h5.mt-0 Media heading
+                                p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        .card.card-items(style="width: 20rem;")
+                            img.card-img-top(src="img/card-image.svg" alt="Card image cap")
+                            .card-body
+                                h4.card-title Card title
+                                p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                                a.btn.btn-primary(href="#") Go somewhere
+                .col-sm-4
+                    .divider
+                        .media
+                            img.d-flex.mr-3(src="img/media-object.svg" alt="Generic placeholder image")
+                            .media-body
+                                h5.mt-0 Media heading
+                                p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        .card.card-items(style="width: 20rem;")
+                            img.card-img-top(src="img/card-image.svg" alt="Card image cap")
+                            .card-body
+                                h4.card-title Card title
+                                p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                                a.btn.btn-primary(href="#") Go somewhere
+                .col-sm-4
+                    .divider
+                        .media
+                            img.d-flex.mr-3(src="img/media-object.svg" alt="Generic placeholder image")
+                            .media-body
+                                h5.mt-0 Media heading
+                                p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        .card.card-items(style="width: 20rem;")
+                            img.card-img-top(src="img/card-image.svg" alt="Card image cap")
+                            .card-body
+                                h4.card-title Card title
+                                p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                                a.btn.btn-primary(href="#") Go somewhere
+
+        // FOOTER 
+        nav.navbar.navbar-dark.bg-dark
+            a(class="navbar-brand" href="#")
+                img(src="img/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="")
+                | Bootstrap
+        
+        // OPTIONAL JAVASCRIPT 
+        // jQuery first, then Popper.js, then Bootstrap JS 
+        script(src="js/jquery-3.2.1.slim.min.js")
+        script(src="js/popper.min.js")
+        script(src="js/bootstrap.min.js")

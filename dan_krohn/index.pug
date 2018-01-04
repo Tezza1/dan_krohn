@@ -1,0 +1,247 @@
+doctype html
+html(lang="en")
+    head
+        // Required meta tags
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        // Bootstrap CSS 
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+        link(rel="stylesheet" href="css/style.css")
+    body(data-spy="scroll" data-target=".navbar" data-offset="50")
+        // NAVBAR 
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+            a.navbar-brand(href="#home")
+                img.mr-2(src="img/bitcoin-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="") 
+                | Bitcoin-Japan
+            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+
+            div(class="collapse navbar-collapse" id="navbarsupportedcontent")
+                ul.navbar-nav.mr-auto
+                    li.nav-item
+                        a.nav-link(href="#home") home 
+                    li.nav-item
+                        a.nav-link(href="#articles") articles
+                    li.nav-item
+                        a.nav-link(href="#videos") videos
+
+        // JUMBOTRON 
+        .container-fluid#home
+            .jumbotron.jumbotron-fluid
+                .container
+                    h1.display-4 
+                        img.d-inline-block.align-top.svg(src="img/bitcoin-connect-up-graph.svg" alt="")
+                        | Grow with an investment in Bitcoin
+                    p.lead Use the USI package to reduce risks and maximize the growth of your investment 
+                    hr.my-4.border.border-light
+                    ul
+                        li 
+                            span.font-weight-bold Key USI / Bitcoin point #1 - 
+                            span.font-italic Cras sit amet nibh libero, in gravida nulla.
+                        li.mt-2
+                            span.font-weight-bold Key USI / Bitcoin point #2 - 
+                            span.font-italic Cras sit amet nibh libero, in gravida nulla.
+                        li.mt-2
+                            span.font-weight-bold Key USI / Bitcoin point #3 - 
+                            span.font-italic Cras sit amet nibh libero, in gravida nulla.
+                        li.mt-2
+                            span.font-weight-bold Key USI / Bitcoin point #4 - 
+                            span.font-italic Cras sit amet nibh libero, in gravida nulla.
+                    p.lead
+                        a.btn.btn-lg.font-weight-bold.mt-4(data-toggle="modal" data-target="#infoModal" style="color: black;") Request more information
+
+        // INFO MODAL
+        .modal.fade#infoModal
+            .modal-dialog
+                .modal-content
+                    // modal header
+                    .modal-header
+                        h4.modal-title Fill in the form
+                        button.close(type="button" data-dismiss="modal") &times;
+                    // modal body
+                    .modal-body
+                        form.ml-4.mr-4
+                            label.mt-4(for="name" style="color: white;") Name:
+                            input.form-control#name(type="input")
+                            label.mt-4(for="email" style="color: white;") Email:
+                            input.form-control#email(type="email")
+                            label.mt-4(for="comments" style="color: white;") Comments:
+                            textarea.form-control
+                            button.btn.mt-4(type="submit" style="background-color: blue; color: white;") Send
+                        p.float-right.mt-5
+                            a.mr-4(href="#")  
+                                i.fa.fa-facebook-square
+                            a.mr-4(href="#")
+                                i.fa.fa-twitter-square
+                            a.mr-4(href="#")
+                                i.fa.fa-linkedin-square
+                            a.mr-4(href="#")
+                                i.fa.fa-google-plus-square
+                            a.mr-4(href="#")
+                                i.fa.fa-skype
+                    // modal footer
+                    .modal-footer
+                        button.btn.font-weight-bold(type="button" data-dismiss="modal") Close
+
+        // CAROUSEL
+        .container-fluid
+            .row.justify-content-md-center
+                .col-md-10
+                    .carousel.slide#carouselExample(data-ride="carousel")
+                        ol.carousel-indicators
+                            li.active(data-target="#carouselExample" data-slide-to="0")
+                            li(data-target="#carouselExample" data-slide-to="1")
+                            li(data-target="#carouselExample" data-slide-to="2")
+                        .carousel-inner
+                            .carousel-item.active(style="height: 35rem;")
+                                img.d-block.w-100(src="img/bitcoin-circuits.jpg" alt="First slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h3.font-italic "Bitcoin quote: Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin."
+                                    p Attribute and date
+                            .carousel-item(style="height: 35rem;")
+                                img.d-block.w-100(src="img/bitcoin-design.jpg" alt="Second slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h3.font-italic "Bitcoin quote: Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin."
+                                    p Attribute and date
+                            .carousel-item(style="height: 35rem;")
+                                img.d-block.w-100(src="img/blockchain-bitcoin.jpg" alt="Third slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h3.font-italic "Bitcoin quote: Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin."
+                                    p Attribute and date
+                        a.carousel-control-prev(href="#carouselExample" role="button" data-slide="prev")
+                            span.carousel-control-prev-icon(aria-hidden="true")
+                            span.sr-only Previous
+                        a.carousel-control-next(href="#carouselExample" role="button" data-slide="next")
+                            span.carousel-control-next-icon(aria-hidden="true")
+                            span.sr-only Next
+
+        // MEDIA
+        .container-fluid#articles
+            .row.media-items
+                .col-sm-6
+                    .divider.mb-5
+                        .media
+                            img.d-flex.mr-3(src="img/bitcoin-and-laptop.svg" alt="Generic placeholder image")
+                            .media-body.mr-4
+                                h3.mt-0 Article on Bitcoin #1 
+                                p 
+                                    span.font-weight-bold Overview of the article- 
+                                    span.font-weight-light.font-italic sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    a(href="#")  Read more
+                                        i.ml-2.fa.fa-external-link
+                .col-sm-6
+                        .media
+                            img.d-flex.mr-3(src="img/bitcoin-exchange-rate.svg" alt="Generic placeholder image")
+                            .media-body.mr-4
+                                h3.mt-0 Article on Bitcoin #2 
+                                p 
+                                    span.font-weight-bold Overview of the article- 
+                                    span.font-weight-light.font-italic sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    a(href="#")  Read more
+                                        i.ml-2.fa.fa-external-link
+
+        // CARDS
+        .container-fluid#videos
+            .row
+                .col-sm-4
+                    .card.card-items.border.border-white(style="width: 20rem;")
+                        img.card-img-top(src="img/YouTube.jpg" alt="Card image cap")
+                        .card-body
+                            h4.card-title YouTube Video Title #1
+                            p.card-text Brief description of the YouTube video on USI and the key learning point. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            a.btn.font-weight-bold(data-toggle="modal" data-target="#myModal1") Watch video
+                .col-sm-4
+                    .card.card-items.border.border-white(style="width: 20rem;")
+                        img.card-img-top(src="img/YouTube.jpg" alt="Card image cap")
+                        .card-body
+                            h4.card-title YouTube Video Title #2
+                            p.card-text Brief description of the YouTube video on USI and the key learning point. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            a.btn.font-weight-bold(data-toggle="modal" data-target="#myModal2") Watch video
+                .col-sm-4
+                    .card.card-items.border.border-white(style="width: 20rem;")
+                        img.card-img-top(src="img/YouTube.jpg" alt="Card image cap")
+                        .card-body
+                            h4.card-title YouTube Video Title #3
+                            p.card-text Brief description of the YouTube video on USI and the key learning point. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            a.btn.font-weight-bold(data-toggle="modal" data-target="#myModal3") Watch video
+
+        // MODALS (OPENED BY BUTTONS ON CARDS)
+        .modal.fade#myModal1
+            .modal-dialog
+                .modal-content
+                    // modal header
+                    .modal-header
+                        h4.modal-title YouTube Video Title #1
+                        button.close(type="button" data-dismiss="modal") &times;
+                    // modal body
+                    .modal-body
+                        p Brief description of the YouTube video on USI and the key learning point. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                        img.mx-auto(src="img/play-YouTube.jpg" alt="Card image cap")
+                    // modal footer
+                    .modal-footer
+                        button.btn.font-weight-bold(type="button" data-dismiss="modal") Close
+
+        .modal.fade#myModal2
+            .modal-dialog
+                .modal-content
+                    // modal header
+                    .modal-header
+                        h4.modal-title YouTube Video Title #2
+                        button.close(type="button" data-dismiss="modal") &times;
+                    // modal body
+                    .modal-body
+                        p Brief description of the YouTube video on USI and the key learning point. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                        img.mx-auto(src="img/play-YouTube.jpg" alt="Card image cap")
+                    // modal footer
+                    .modal-footer
+                        button.btn.font-weight-bold(type="button" data-dismiss="modal") Close
+
+        .modal.fade#myModal3
+            .modal-dialog
+                .modal-content
+                    // modal header
+                    .modal-header
+                        h4.modal-title YouTube Video Title #3
+                        button.close(type="button" data-dismiss="modal") &times;
+                    // modal body
+                    .modal-body
+                        p Brief description of the YouTube video on USI and the key learning point. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                        img.mx-auto(src="img/play-YouTube.jpg" alt="Card image cap")
+                    // modal footer
+                    .modal-footer
+                        button.btn.font-weight-bold(type="button" data-dismiss="modal") Close
+
+        // FOOTER
+        nav.navbar.navbar-dark.bg-dark
+            a(class="navbar-brand" href="#")
+                img.mr-2(src="img/bitcoin-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="")
+                | Bitcoin-Japan
+            .navbar-text
+                a.mr-4(href="#")  
+                    i.fa.fa-facebook-square
+                a.mr-4(href="#")
+                    i.fa.fa-twitter-square
+                a.mr-4(href="#")
+                    i.fa.fa-linkedin-square
+                a.mr-4(href="#")
+                    i.fa.fa-google-plus-square
+                a.mr-4(href="#")
+                    i.fa.fa-skype
+        
+        // OPTIONAL JAVASCRIPT 
+        // jQuery first, then Popper.js, then Bootstrap JS 
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js")
+
+        // make background black & bitcoin colors
+        // add facebook, etc...
+        // make a scrollspy
+        // link up button in jumbotron
